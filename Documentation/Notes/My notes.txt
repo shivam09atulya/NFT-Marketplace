@@ -1,0 +1,38 @@
+Thank you gaurav now lets move  forward into the frontend part.
+So we used NextJS, tailwind CSS and Pinata for our frontend stack as earlier mentioned by my friend.
+
+
+Next.js is a React-based framework for building server-rendered and statically-generated web applications. It provides features such as automatic code splitting, server-side rendering, and easy API routes creation.
+
+While for styling Tailwind CSS was used which is a utility-first framework that provides a set of CSS classes.
+
+
+Pinata is a cloud storage platform that specializes in hosting and managing NFTs, IPFS files, and decentralized applications. It offers features such as content delivery, metadata management, and analytics for blockchain-based projects.
+
+
+IPFS (InterPlanetary File System) is a peer-to-peer protocol for storing and sharing files in a distributed network, using content-based addressing instead of traditional location-based addressing.
+
+1.Creating an NFT
+
+The first step in NFT marketplace is that of creation. So for that we come to our Sell NFT section. 
+In this we get a creation page, where the nfts are made and sell.
+As you can see sir, that there are different sections like name,description,price for our nft
+and also an image upload for the same.
+
+When we have given the info for our NFT then we upload it to pinata which as said is an ipfs pinnig service , which makes it easier to manage and deliver.
+
+When this is uploaded then we try to list it into the goerli blockchain through Metamask. We have to sign in our metamask account authenticate then the request for listing is fulfilled.
+
+2.Homepage / buying nft
+The listed NFT is seen in the homepage where all the unsold nfts are loaded. This page as you can see sir gives the info about the nfts including their name,price,image and buying option.This page fethces api from Pinata and displays it here
+
+If we click on the buy button then the metamask agian will authenticate and ask for wether i want to buy it or not. When selected yes , the nft is bought with the ETH being spend and
+we (the user) gets our nft transferred to our metamask account.
+
+
+3. My NFT
+This page shows all the nfts listed by us and also the one we bought.Here we have the option of the nfts which is to resell.These nfts were cancelled due to some reason so it came back to us, the creator.When we click the resell button we will have to authenticate back to metamask and it will ask for authorization to sell , to which if granted it will again sell the nft , and this will re-appear in the home page.
+
+
+4.Dashboard 
+This page shows all the nfts listed my us (the creator). Here we have the option, to wether let the nft be sold or be cancelled.For cancelling the nft , click on the button ,agian the metamask wallet will be active and ask permission to cancel the token, approving which will cancel the listing and this nft will not be shown in the market rather in our 'My NFT'
